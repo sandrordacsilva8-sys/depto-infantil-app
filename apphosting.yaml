@@ -1,2 +1,7 @@
-kind: "framework"
-runtime: "static"
+# Configuração para o Firebase App Hosting reconhecer HTML estático
+headers:
+  - list:
+      - /index.html
+    headers:
+      - key: Content-Type
+        value: text/html
